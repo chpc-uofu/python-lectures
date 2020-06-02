@@ -5,39 +5,39 @@ import matplotlib.pyplot as plt
 np.set_printoptions(precision=5)
 
 
-print("Exercise 5::")
-print("  5.1:")
+print(f"Exercise 5::")
+print(f"  5.1:")
 x = np.arange(1,7)
-print("  x:\n{0}\n".format(x))
-print("    Solution 1:")
+print(f"  x:\n{x}\n")
+print(f"    Solution 1:")
 y = np.power(3,x)
-print("  y:\n{0}\n".format(y))
+print(f"  y:\n{y}\n")
 
-print("    Solution 2:")
+print(f"    Solution 2:")
 y = 3**x
-print("  y:\n{0}\n".format(y))
+print(f"  y:\n{y}\n")
 
 
-print("  5.2:")
+print(f"  5.2:")
 A = rnd.random((5,10))
-print("  A:\n{0}\n".format(A)) 
+print(f"  A:\n{A}\n")
 
 max_val = A.max()
-print("  Max val for all of A:\n{0}\n".format(max_val))
+print(f"  Max val for all of A:\n{max_val}\n")
 
 min_val_eachcol = A.min(axis=0) 
-print("  Min. val in each column:\n{0}\n".format(min_val_eachcol))
+print(f"  Min. val in each column:\n{min_val_eachcol}\n")
 
 min_val_fourthrow = A[3,:].min()
-print("  Min. val in fourth row:\n{0}\n".format(min_val_fourthrow))
+print(f"  Min. val in fourth row:\n{min_val_fourthrow}\n")
 
 bool_mat = (A < 0.02) | (A > 0.98)
-print("  Boolean Matrix:\n{0}\n".format(bool_mat))
-print("  Any val <0.02 or >0.98? {0}\n".format(bool_mat.any()))
-print("  Corresponding values:\n{0}\n".format(A[bool_mat]))
+print(f"  Boolean Matrix:\n{bool_mat}\n".format(bool_mat))
+print(f"  Any val <0.02 or >0.98? {bool_mat.any()}\n")
+print(f"  Corresponding values:\n{A[bool_mat]}\n")
 
 
-print("  5.3:")
+print(f"  5.3:")
 def calc_sn(n):
     """
     Function which returns an array of 

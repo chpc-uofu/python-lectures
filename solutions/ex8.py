@@ -3,18 +3,18 @@ import numpy as np
 import numpy.linalg as la
 import numpy.random as rnd
 
-print("Exercise 8::")
-print("  8.1:")
+print(f"Exercise 8::")
+print(f"  8.1:")
 
 A = rnd.random((6,6))
 B = ( A+A.T)/2.0
 
 eigval, eigvec = la.eigh(A)
-print("  B:\n{0}\n".format(B))
-print("    eig. values:\n{0}\n".format(eigval))
-print("    eig. vector:\n{0}\n".format(eigvec))
+print(f"  B:\n{B}\n".format(B))
+print(f"    eig. values:\n{eigval}\n")
+print(f"    eig. vector:\n{eigvec}\n")
 
-print("  8.2:")
+print(f"  8.2:")
 # Generate the elements randomly
 n = rnd.randint(4,9)
 V = np.arange(1,n+1)
@@ -35,19 +35,19 @@ def detVDM(V):
     mask = np.fromfunction(lambda i,j: i<j,(N,N))
     return np.prod(res[mask])
 
-print("  N:{0}".format(n))
-print("  V:\n{0}\n".format(V))
+print(f"  N:{n}")
+print(f"  V:\n{V}\n")
 
 A = genVDM(V) 
 detA = detVDM(V)
-print("Own Functions::")
-print("  A:\n{0}".format(A))
-print("  det(A):{0}\n".format(detA))
+print(f"Own Functions::")
+print(f"  A:\n{A}")
+print(f"  det(A):{detA}\n")
 
 B = np.vander(V,increasing=True)
 detB = la.det(B)
-print("Check using NumPy::")
-print("  A:\n{0}".format(B))
-print("  det(A):{0}\n".format(detB))
-print("Diff:{0:16.12f}".format(math.fabs(detB-detA)))
+print(f"Check using NumPy::")
+print(f"  A:\n{B}".format(B))
+print(f"  det(A):{detB}\n".format(detB))
+print(f"Diff:{math.fabs(detB-detA):16.12f}")
 

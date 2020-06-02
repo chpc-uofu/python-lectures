@@ -2,6 +2,8 @@ import importlib
 import sys
 
 __author__ = "Wim R.M. Cardoen"
+__version__ = "2020"
+# Last update: 05/19/2020
 
 # Dictionary with the comparaison operators
 dictCmp={"==": '__eq__',
@@ -12,16 +14,19 @@ dictCmp={"==": '__eq__',
          "!=": '__ne__',
         } 
 
-def get_pyinfo():
+def get_pyversion():
     """
     Retrieve:
       a.Version of Python 
       b.Installation prefix
     """
     version = sys.version_info[0:3]
-    print("    Python {0}.{1}.{2}".format(version[0],
+    print("    Python {0}.{1}.{2} found".format(version[0],
                         version[1],version[2]))
     print("        --prefix={0}\n".format(sys.prefix))
+    if int(version[0]) !=3 or int(version[1]) < 6:
+        str_err= "    ERROR: Python >=3.6 is REQUIRED!"
+        sys.exit(str_err)
     return
 
 def check_package(pkg,op,req_version):
@@ -64,7 +69,7 @@ if __name__ == "__main__":
 
     print("\n\n  Checking installation ...\n")
 
-    get_pyinfo() 
+    get_pyversion() 
     
     statLst = []
     for ipkg in range(len(REQUIRED_PKG)):

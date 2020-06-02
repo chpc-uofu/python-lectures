@@ -1,0 +1,7 @@
+# Written by Wim R.M. Cardoen on 07/26/2018
+# Requirements for the NumPy/SciPy tutorial
+numpy>=1.12.0
+scipy>=0.19.0 
+matplotlib>=1.5.0
+notebook>=4.2.0
+jupyter>=0.0.1

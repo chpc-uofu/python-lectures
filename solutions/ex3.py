@@ -1,37 +1,37 @@
 import numpy as np
 import numpy.random as rnd
 
-print("Exercise 3::")
-print("  3.1:")
+print(f"Exercise 3::")
+print(f"  3.1:")
 A = np.arange(1,31).reshape(5,6)
-print("  A:\n{0}\n".format(A))
+print(f"  A:\n{A}\n")
 
 
 B=A[:,:4:2]
-print("  B:\n{0}\n".format(B))
+print(f"  B:\n{B}\n")
 
 C=A[1,1::2]
-print("  C:\n{0}".format(C))
-print("  C.shape:{0}\n".format(C.shape))
+print(f"  C:\n{C}")
+print(f"  C.shape:{C.shape}\n")
 
 D=A[1:2,1::2]
-print("  D:\n{0}".format(D))
-print("  D.shape:{0}\n".format(D.shape))
+print(f"  D:\n{D}")
+print(f"  D.shape:{D.shape}\n")
 
 E=A[0::3,1::3]
-print("  E:\n{0}\n".format(E))
+print(f"  E:\n{E}\n")
 
-print("\n  3.2:")
+print(f"\n  3.2:")
 X = rnd.random((7,7))
 X[2:5,2:5]=0.0
-print("  X:\n{0}\n".format(X))
+print(f"  X:\n{X}\n")
 
-print("\n  3.3:")
+print(f"\n  3.3:")
 Y = np.zeros((8,8),dtype='int32')
 Y[::2,1::2]=1
 Y[1::2,0::2]=1
-print("  Y:\n{0}\n".format(Y))
+print(f"  Y:\n{Y}\n")
 
 tmpl= np.array([[0,1],[1,0]],dtype='int32')
 Z =np.tile(tmpl,(4,4))
-print("  Z:\n{0}\n".format(Z))
+print(f"  Z:\n{Z}\n")

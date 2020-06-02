@@ -1,12 +1,12 @@
 import numpy as np
 # Exercise 1.a.::
-print("Exercise 1.a::")
+print(f"Exercise 1.a::")
 ex = [i for i in range(1,11)]
 lst = [2**i for i in ex]
-print("1D array:\n{0}\n".format(np.array(lst)))
+print(f"1D array:\n{np.array(lst)}\n")
 
 # Exercise 1.b::
-print("Exercise 1.b::")
+print(f"Exercise 1.b::")
 start = 2.
 stop   = 3.
 num = 5 
@@ -15,10 +15,10 @@ dx= (stop - start)/float(num-1)
 
 pt = [ start+i*dx for i in range(num)]
 lst = [base**item for item in pt]
-print("{0}".format(np.array(lst)))
-print("{0}\n".format(np.logspace(start,stop,num,base)))
+print(f"{np.array(lst)}")
+print(f"{np.logspace(start,stop,num,base)}\n")
 
 # Exercise 1.c::
-print("Exercise 1.c::")
+print(f"Exercise 1.c::")
 lst= range(30,0,-1)
-print("{0}\n".format(np.array(lst).reshape((5,6))))
+print(f"{np.array(lst).reshape((5,6))}\n")
