@@ -2,3 +2,5 @@
 __pycache__
 .DS_Store
 tmpfile.txt
+_output
+.jupyterlite.doit.db
