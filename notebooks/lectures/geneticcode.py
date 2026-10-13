@@ -1,6 +1,6 @@
 """
-geneticcode.py defines the standard DNA codon table for eukaryotes.
-Data from Wikipedia: https://en.wikipedia.org/wiki/DNA_codon_table
+Defines the standard DNA codon table for eukaryotes
+Data are from https://en.wikipedia.org/wiki/DNA_codon_table
 """
 codons = {
     'GCT':'A',
