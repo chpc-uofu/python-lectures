@@ -8,3 +8,13 @@ This repository contains the Jupyter Notebooks and related files for the Univers
 
 ## Notes
 As of Summer 2024, the NumPy and SciPy content has been separated into its own repository at [https://github.com/chpc-uofu/intro-numpy](https://github.com/chpc-uofu/intro-numpy).
+
+## JupyterLite build
+
+Build a static site with
+
+```console
+make build
+```
+
+This creates `_output/` with static web content.
