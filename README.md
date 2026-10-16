@@ -1,6 +1,11 @@
+<img src="images/py.svg"
+     alt="Lettermark to symbolize Python"
+     role="img"
+     width="100" />
+
 # Hands-on Introduction to Python from the University of Utah Center for High Performance Computing
 
-This repository contains the Jupyter Notebooks and related files for the University of Utah Center for High Performance Computing's Python course. This is a hands-on introduction to the Python language for beginners.
+This repository contains the Jupyter Notebooks and related files for the University of Utah Center for High Performance Computing's Python course. This is an introduction to the Python language for beginners, written by Brett Milash, Wim Cardoen, and Robben Migacz. We give a tour of the Python language's features and syntax, and of the structure of Python scripts and snippets. This isn't an introduction to computer science or software development, for which you may need to refer to other materials; however, we've designed the course to be approachable for students, researchers, and professionals who are new to software development.
 
 ## Contents
 
@@ -15,7 +20,7 @@ This repository contains the Jupyter Notebooks and related files for the Univers
 - `15_classes` and `16_inheritance` introduce object-oriented programming
 - `17_conclusion` collects next steps, programming advice, and further resources
 
-Exercises appear alongside their related lessons. Solutions and supplementary materials are included within the relevant notebooks.
+Throughout, we have added exercises alongside their related lessons. We include solutions and supplementary materials within the relevant notebooks.
 
 ### NumPy and SciPy content
 
